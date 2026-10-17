@@ -25,7 +25,7 @@ if(process.env.FRONTEND_URL){
 //endpoint de bienvenida
 app.get("/", (req, res) => {
     res.json({
-        mensaje: "Bienvenido a la API, version 2",
+        mensaje: "Bienvenido a la API, version de Diego Castellanos",
         entorno: NODE_ENV
     });
 });
@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
     res.status(200).json({
         status: "ok",
-        servicio: "API Desarrollo Web",
+        servicio: "API Desarrollo Web de Diego Castellanos",
         timestamp: new Date().toISOString()
     });
 });
@@ -62,7 +62,7 @@ app.post("/api/productos", (req,res) => {
     }
 
     res.status(201).json({
-        mensaje: "Solicitud de creación validada",
+        mensaje: "Mira krnal yo si no te voy a mentir, esta cosa solo se subió en nuestros corazones y mentes, oremos",
         producto: {nombre: nombre.trim(), precio},
         persistido: false
     });
